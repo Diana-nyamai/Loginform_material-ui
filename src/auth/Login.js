@@ -24,8 +24,8 @@ const Login = () => {
           <div style={{display:'flex',flexDirection:'column'}}>
           <Grid container style={{justifyContent:'center'}}><img src={logo} alt="logo" width="200"/> </Grid>
             
-          <TextField label="Email" margin="normal"/>
-          <TextField label="Password" margin="normal"/>
+          <TextField label="Email*" margin="normal"/>
+          <TextField label="Password*" margin="normal"/>
           <Typography align="right"><Link>forgot password?</Link></Typography>
 
           <div style={{height: 20}}/>
