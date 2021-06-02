@@ -32,13 +32,9 @@ const Login = () => {
           <Button color="primary" variant="contained">LOG IN</Button>
 
           <div style={{height: 20}}/>
+          <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link>CREATE ACCOUNT</Link></Typography>
           </div>
-
-          
-
-          </Grid>
-           
-         
+            </Grid>
            </Grid>
         </div>
     )
