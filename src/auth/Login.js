@@ -29,7 +29,7 @@ const Login = () => {
           <Typography align="right"><Link>forgot password?</Link></Typography>
 
           <div style={{height: 20}}/>
-          <Button color="primary" variant="contained">LOG IN</Button>
+          <Button color="primary" variant="contained">log in</Button>
 
           <div style={{height: 20}}/>
           <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link>CREATE ACCOUNT</Link></Typography>
