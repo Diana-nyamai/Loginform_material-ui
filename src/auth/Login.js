@@ -37,7 +37,7 @@ const Login = () => {
           <div style={{height: 120}}/>
           <Grid container >
           <Grid item>
-          <Typography color="primary">Designer: DIANA NYAMAI</Typography>
+          <Typography color="primary">Designer:<Link href="https://github.com/Diana-nyamai"> DIANA NYAMAI</Link></Typography>
           </Grid>
           </Grid>
           </Grid>
