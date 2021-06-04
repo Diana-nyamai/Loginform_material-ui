@@ -33,9 +33,17 @@ const Login = () => {
 
           <div style={{height: 20}}/>
           <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link>CREATE ACCOUNT</Link></Typography>
-          </div>
+          </div>  
+          <div style={{height: 120}}/>
+          <Grid container >
+          <Grid item style={{alignContent:'center', color:'primary'}}>
+         <div>Designer: DIANA NYAMAI</div> 
+          </Grid>
+          </Grid>
+          </Grid>
             </Grid>
-           </Grid>
+          
+    
         </div>
     )
 }
