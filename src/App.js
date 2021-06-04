@@ -1,7 +1,33 @@
+import React, {useState, useEffect} from 'react'
 import './App.css';
+import Fire from './auth/Fire';
 import Login from './auth/Login';
 
-function App() {
+const App = () =>{
+   const [user, setUser] = useState('');
+   const [email, setEmail] = useState('');
+   const [password, setPassword] = useState('');
+   const [emailError, setEmailError] = useState('');
+   const [PasswordError, setPasswordError] = useState('');
+   const [hasAccount, setHasAccount] = usestate(false);
+
+const handleLoginIn = () =>{
+       Fire
+           .auth()
+           .signInWithEmailAndPassword(email, password)
+           .catch((err) =>{
+             switch (err.code){
+               case "auth/invalid-email":
+               case "auth/user-disabled":
+               case "auth/user-not-found":
+                 setEmailError(err.message);
+                    break;
+               case "auth/wrong-password":
+                   setPassword(err.message);
+                    break;
+             }
+           })
+}
   return (
     <div className="App">
       <Login/>
