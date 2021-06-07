@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './App.css';
+import fire from './auth/Fire';
 import Login from './auth/Login';
 
 const App = () =>{
@@ -11,7 +12,7 @@ const App = () =>{
    const [hasAccount, setHasAccount] = usestate(false);
 
 const handleLoginIn = () =>{
-       Fire
+       fire
            .auth()
            .signInWithEmailAndPassword(email, password)
            .catch((err) =>{
