@@ -56,7 +56,7 @@ const handleLoginIn = () =>{
        setUser(user)
      }
      else{
-       setUser("u")
+       setUser("")
      }
    })
  }
