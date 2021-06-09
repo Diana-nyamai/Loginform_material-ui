@@ -17,8 +17,8 @@ const handleLoginIn = () =>{
            .signInWithEmailAndPassword(email, password)
            .catch((err) =>{
              switch (err.code){
-               case "auth/email-already-in-use":
                case "auth/invalid-email":
+               case "auth/user-disabled":
                case "auth/user-not-found":
                  setEmailError(err.message);
                     break;
@@ -29,9 +29,37 @@ const handleLoginIn = () =>{
            })
 }
 
+  const handleSignUp = () =>{
+    fire
+           .auth()
+           .createUserWithEmailAndPassword(email, password)
+           .catch((err) =>{
+             switch (err.code){
+               case "auth/email-already-in-use":
+               case "auth/invalid-email":
+                 setEmailError(err.message);
+                    break;
+               case "auth/weak-password":
+                   setPassword(err.message);
+                    break;
+             }
+           })
+  }
+
   const handleLogOut = () =>{
     fire.auth().signOut();
   }
+
+ const authListener = () =>{
+   fire.auth().onAuthStateChanged((user) =>{
+     if (user){
+       setUser(user)
+     }
+     else{
+       setUser("u")
+     }
+   })
+ }
 
   return (
     <div className="App">
