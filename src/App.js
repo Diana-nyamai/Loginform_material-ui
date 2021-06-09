@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import './App.css';
 import Login from './auth/Login';
 
@@ -8,7 +8,7 @@ const App = () =>{
    const [password, setPassword] = useState('');
    const [emailError, setEmailError] = useState('');
    const [PasswordError, setPasswordError] = useState('');
-   const [hasAccount, setHasAccount] = usestate(false);
+   const [hasAccount, setHasAccount] = useState(false);
 
 const handleLoginIn = () =>{
        fire
