@@ -43,7 +43,7 @@ const Login = (props) => {
             <div style={{display:'flex',flexDirection:'column'}}>
             <Button color="primary" variant="contained" onClick={handleSignUp}>Create Account</Button>
               <div style={{height: 20}}/>
-          <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link onClick={() => setHasAccount(hasAccount)}>log in</Link></Typography>
+          <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link onClick={() => setHasAccount(!hasAccount)}>log in</Link></Typography>
             </div>
           )}
          
