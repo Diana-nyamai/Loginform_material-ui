@@ -78,7 +78,7 @@ const handleLogIn = () =>{
  useEffect(() => {
    authListener();
    
- }, []);
+ });
 
   return (
      <div className="App">
