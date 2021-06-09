@@ -17,8 +17,8 @@ const handleLoginIn = () =>{
            .signInWithEmailAndPassword(email, password)
            .catch((err) =>{
              switch (err.code){
+               case "auth/email-already-in-use":
                case "auth/invalid-email":
-               case "auth/user-disabled":
                case "auth/user-not-found":
                  setEmailError(err.message);
                     break;
