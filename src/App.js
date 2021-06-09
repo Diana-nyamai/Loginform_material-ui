@@ -9,7 +9,7 @@ const App = () =>{
    const [password, setPassword] = useState('');
    const [emailError, setEmailError] = useState('');
    const [PasswordError, setPasswordError] = useState('');
-   const [hasAccount, setHasAccount] = useState(true);
+   const [hasAccount, setHasAccount] = useState(false);
 
 const clearInputs = () =>{
   setEmail('');
