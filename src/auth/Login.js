@@ -3,7 +3,7 @@ import {Button, Grid, Link, TextField, Typography} from '@material-ui/core';
 import natur from '../assets/Images/natur.png'
 import logo from '../assets/Images/logo.png'
 
-const Login = () => {
+const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
     return (
         <div>
