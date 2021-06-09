@@ -61,10 +61,10 @@ const handleLogIn = () =>{
 
   const handleLogOut = () =>{
     fire.auth().signOut();
-  }
+  };
 
  const authListener = () =>{
-   fire.auth().onAuthStateChanged((user) =>{
+   fire.auth().onAuthStateChanged(user =>{
      if (user){
        clearInputs();
        setUser(user);
