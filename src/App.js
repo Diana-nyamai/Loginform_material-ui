@@ -11,6 +11,16 @@ const App = () =>{
    const [PasswordError, setPasswordError] = useState('');
    const [hasAccount, setHasAccount] = useState(false);
 
+const clearInputs = () =>{
+  setEmail('');
+  setPassword('');
+}
+
+const clearErrors = () =>{
+  setEmailError('');
+  setPasswordError('');
+}
+
 const handleLoginIn = () =>{
        fire
            .auth()
