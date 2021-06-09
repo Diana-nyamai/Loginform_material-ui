@@ -32,10 +32,22 @@ const Login = (props) => {
           <Typography align="right"><Link>forgot password?</Link></Typography>
 
           <div style={{height: 20}}/>
-          <Button color="primary" variant="contained">log in</Button>
-
-          <div style={{height: 20}}/>
+          {hasAccount ? (
+             <div>
+              <Button color="primary" variant="contained">log in</Button>
+              <div style={{height: 20}}/>
           <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link>CREATE ACCOUNT</Link></Typography>
+             </div>
+          ):(
+            <div>
+            <Button color="primary" variant="contained">Create Account</Button>
+              <div style={{height: 20}}/>
+          <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link>log in</Link></Typography>
+            </div>
+          )}
+         
+
+          
           </div>  
           <div style={{height: 120}}/>
           <Grid container >
