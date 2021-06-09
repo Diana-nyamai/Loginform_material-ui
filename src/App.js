@@ -21,13 +21,13 @@ const clearErrors = () =>{
   setPasswordError('');
 }
 
-const handleLoginIn = () =>{
+const handleLogIn = () =>{
     clearErrors();
        fire
            .auth()
            .signInWithEmailAndPassword(email, password)
            .catch((err) =>{
-             switch (err.code){
+             switch(err.code){
                case "auth/invalid-email":
                case "auth/user-disabled":
                case "auth/user-not-found":
@@ -86,9 +86,13 @@ const handleLoginIn = () =>{
       setEmail={setEmail}
       password={password}
       setPassword={setPassword}
-      
-      
-      />
+      handleLogIn={handleLogIn}
+      handleSignUp={handleSignUp}
+      hasAccount={hasAccount}
+      setHasAccount={setHasAccount}
+      emailError={emailError}
+      PasswordError={PasswordError}
+/>
     </div>
   );
 }

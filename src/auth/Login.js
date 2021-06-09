@@ -4,6 +4,7 @@ import natur from '../assets/Images/natur.png'
 import logo from '../assets/Images/logo.png'
 
 const Login = () => {
+    
     return (
         <div>
            <Grid container style={{minHeight:'100vh'}}>
