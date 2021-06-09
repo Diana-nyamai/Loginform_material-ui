@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import fire from './auth/Fire';
 import Login from './auth/Login';
 
 const App = () =>{
