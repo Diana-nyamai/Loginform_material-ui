@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import fire from './auth/fire';
 import Login from './auth/Login';
+import HomePage from './pages/Homepage/HomePage';
 
 const App = () =>{
    const [user, setUser] = useState('');
@@ -93,6 +94,7 @@ const handleLogIn = () =>{
       emailError={emailError}
       PasswordError={PasswordError}
 />
+<HomePage handleLogOut={handleLogOut}/>
     </div>
   );
 }
