@@ -27,20 +27,20 @@ const Login = (props) => {
             
           <TextField label="Email*" margin="normal" onChange={(e) => setEmail(e.target.value)}/>
           <Typography>{emailError}</Typography>
-          
+
           <TextField label="Password*" margin="normal" onChange={(e) => setPassword(e.target.value)}/>
           <Typography>{passwordError}</Typography>
           <Typography align="right"><Link>forgot password?</Link></Typography>
 
           <div style={{height: 20}}/>
           {hasAccount ? (
-             <div>
+             <div style={{display:'flex',flexDirection:'column'}}>
               <Button color="primary" variant="contained" onClick={handleLogIn}>log in</Button>
               <div style={{height: 20}}/>
           <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link onClick={!hasAccount}>CREATE ACCOUNT</Link></Typography>
              </div>
           ):(
-            <div>
+            <div style={{display:'flex',flexDirection:'column'}}u>
             <Button color="primary" variant="contained" onClick={handleSignUp}>Create Account</Button>
               <div style={{height: 20}}/>
           <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link onClick={hasAccount}>log in</Link></Typography>
