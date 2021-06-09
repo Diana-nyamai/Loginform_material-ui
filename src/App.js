@@ -81,8 +81,11 @@ const handleLogIn = () =>{
  }, []);
 
   return (
-    <div className="App">
-      <Login 
+     <div className="App">
+     {user ? (
+<HomePage handleLogOut={handleLogOut}/>
+    ):(
+ <Login 
       email={email} 
       setEmail={setEmail}
       password={password}
@@ -94,7 +97,10 @@ const handleLogIn = () =>{
       emailError={emailError}
       PasswordError={PasswordError}
 />
-<HomePage handleLogOut={handleLogOut}/>
+    )}
+   
+     
+
     </div>
   );
 }
