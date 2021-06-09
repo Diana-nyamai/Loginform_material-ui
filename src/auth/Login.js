@@ -25,10 +25,10 @@ const Login = (props) => {
           <div style={{display:'flex',flexDirection:'column'}}>
           <Grid container style={{justifyContent:'center'}}><img src={logo} alt="logo" width="200"/> </Grid>
             
-          <TextField label="Email*" margin="normal" onChange={(e) => setEmail(e.target.value)}/>
+          <TextField label="Email*" value={email} margin="normal" onChange={(e) => setEmail(e.target.value)}/>
           <Typography>{emailError}</Typography>
 
-          <TextField label="Password*" margin="normal" onChange={(e) => setPassword(e.target.value)}/>
+          <TextField label="Password*" value={password} margin="normal" onChange={(e) => setPassword(e.target.value)}/>
           <Typography>{passwordError}</Typography>
           <Typography align="right"><Link>forgot password?</Link></Typography>
 
