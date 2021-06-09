@@ -34,15 +34,15 @@ const Login = (props) => {
           <div style={{height: 20}}/>
           {hasAccount ? (
              <div>
-              <Button color="primary" variant="contained">log in</Button>
+              <Button color="primary" variant="contained" onClick={handleLogIn}>log in</Button>
               <div style={{height: 20}}/>
-          <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link>CREATE ACCOUNT</Link></Typography>
+          <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link onClick={!hasAccount}>CREATE ACCOUNT</Link></Typography>
              </div>
           ):(
             <div>
-            <Button color="primary" variant="contained">Create Account</Button>
+            <Button color="primary" variant="contained" onClick={handleSignUp}>Create Account</Button>
               <div style={{height: 20}}/>
-          <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link>log in</Link></Typography>
+          <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link onClick={hasAccount}>log in</Link></Typography>
             </div>
           )}
          
