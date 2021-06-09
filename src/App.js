@@ -29,6 +29,10 @@ const handleLoginIn = () =>{
            })
 }
 
+  const handleLogOut = () =>{
+    fire.auth().signOut();
+  }
+
   return (
     <div className="App">
       <Login/>
