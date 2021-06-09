@@ -66,7 +66,7 @@ const handleLoginIn = () =>{
    fire.auth().onAuthStateChanged((user) =>{
      if (user){
        clearInputs();
-       setUser(user)
+       setUser(user);
      }
      else{
        setUser("")
@@ -81,7 +81,14 @@ const handleLoginIn = () =>{
 
   return (
     <div className="App">
-      <Login/>
+      <Login 
+      email={email} 
+      setEmail={setEmail}
+      password={password}
+      setPassword={setPassword}
+      
+      
+      />
     </div>
   );
 }
