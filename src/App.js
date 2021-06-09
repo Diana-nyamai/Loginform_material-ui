@@ -22,6 +22,7 @@ const clearErrors = () =>{
 }
 
 const handleLoginIn = () =>{
+    clearErrors();
        fire
            .auth()
            .signInWithEmailAndPassword(email, password)
@@ -40,6 +41,7 @@ const handleLoginIn = () =>{
 }
 
   const handleSignUp = () =>{
+    clearErrors();
     fire
            .auth()
            .createUserWithEmailAndPassword(email, password)
@@ -63,6 +65,7 @@ const handleLoginIn = () =>{
  const authListener = () =>{
    fire.auth().onAuthStateChanged((user) =>{
      if (user){
+       clearInputs();
        setUser(user)
      }
      else{
