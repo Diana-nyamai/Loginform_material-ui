@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import fire from './auth/fire';
 import Login from './auth/Login';
@@ -59,7 +59,12 @@ const handleLoginIn = () =>{
        setUser("")
      }
    })
- }
+ };
+
+ useEffect(() => {
+   authListener();
+   
+ }, []);
 
   return (
     <div className="App">
