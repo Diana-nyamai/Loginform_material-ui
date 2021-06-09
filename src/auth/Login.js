@@ -27,6 +27,7 @@ const Login = (props) => {
             
           <TextField label="Email*" margin="normal" onChange={(e) => setEmail(e.target.value)}/>
           <Typography>{emailError}</Typography>
+          
           <TextField label="Password*" margin="normal" onChange={(e) => setPassword(e.target.value)}/>
           <Typography>{passwordError}</Typography>
           <Typography align="right"><Link>forgot password?</Link></Typography>
