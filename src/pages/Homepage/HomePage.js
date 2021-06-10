@@ -6,7 +6,6 @@ const HomePage = ({handleLogOut}) => {
         <div>
             <h1>welcome to you page</h1>
             <Button onClick={handleLogOut}>Log out</Button>
-
         </div>
     )
 }
