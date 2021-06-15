@@ -36,13 +36,13 @@ const Login = (props) => {
           {hasAccount ? (
              <div style={{display:'flex',flexDirection:'column'}}>
               <Button color="primary" variant="contained" onClick={handleLogIn}>log in</Button>
-              <div style={{height: 20}}/>
+              <div style={{height: 30}}/>
           <Typography color="primary" align="center">DO NOT HAVE AN ACCOUNT?<Link onClick={() => setHasAccount(!hasAccount)}>CREATE ACCOUNT</Link></Typography>
              </div>
           ):(
             <div style={{display:'flex',flexDirection:'column'}}>
             <Button color="primary" variant="contained" onClick={handleSignUp}>Create Account</Button>
-              <div style={{height: 20}}/>
+              <div style={{height: 30}}/>
           <Typography color="primary" align="center">HAVE AN ACCOUNT?<Link onClick={() => setHasAccount(!hasAccount)}>log in</Link></Typography>
             </div>
           )}
