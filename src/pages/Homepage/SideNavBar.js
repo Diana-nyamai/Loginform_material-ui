@@ -3,7 +3,7 @@ import {Button} from 'antd'
 function SideNavBar() {
   return (
     <div>
-      <Button/>
+      <Button type="primary" shape="circle">Login</Button>
     </div>
   )
 }
