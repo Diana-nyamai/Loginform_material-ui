@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button} from '@ant-design/icons'
+import {Button} from 'antd'
 function SideNavBar() {
   return (
     <div>
