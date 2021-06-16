@@ -7,6 +7,7 @@ import {
   VideoCameraOutlined,
   UploadOutlined,
 } from '@ant-design/icons';
+import './index.css'
 
 const { Header, Sider, Content } = Layout;
 
