@@ -6,7 +6,7 @@ const HomePage = ({handleLogOut}) => {
     return (
         <div>
             <SideNavBar/>
-            <Button onClick={handleLogOut} variant="contained" color="primary">Log out</Button>
+            {/*<Button onClick={handleLogOut} variant="contained" color="primary">Log out</Button>*/}
         </div>
     )
 }
