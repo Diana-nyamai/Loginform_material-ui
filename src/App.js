@@ -35,7 +35,7 @@ const handleLogIn = () =>{
                  setEmailError(err.message);
                     break;
                case "auth/wrong-password":
-                   setPasswordError(err.message);
+                setPasswordError(err.message);
                     break;
              }
            })
@@ -53,8 +53,9 @@ const handleLogIn = () =>{
                  setEmailError(err.message);
                     break;
                case "auth/weak-password":
-                   setPasswordError(err.message);
+                setPasswordError(err.message);
                     break;
+              
              }
            })
   }
