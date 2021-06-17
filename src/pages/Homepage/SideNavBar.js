@@ -21,7 +21,7 @@ function SideNavBar({handleLogOut}) {
         <Breadcrumb.Item>List</Breadcrumb.Item>
         <Breadcrumb.Item>App</Breadcrumb.Item>
       </Breadcrumb>
-      <div className="site-layout-content">Content</div>
+      <div className="site-layout-content">Welcome To The Homepage</div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Created by Diana Ndinda Nyamai</Footer>
   </Layout>
