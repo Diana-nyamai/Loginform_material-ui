@@ -35,7 +35,7 @@ const handleLogIn = () =>{
                  setEmailError(err.message);
                     break;
                case "auth/wrong-password":
-                   setPassword(err.message);
+                   setPasswordError(err.message);
                     break;
              }
            })
