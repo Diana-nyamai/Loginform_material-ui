@@ -23,7 +23,7 @@ function SideNavBar({handleLogOut}) {
       </Breadcrumb>
       <div className="site-layout-content">Welcome To The Homepage</div>
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Created by Diana Ndinda Nyamai</Footer>
+    <Footer style={{ textAlign: 'center' }}>Created by Diana Ndinda Nyamai: &copy; {new Date().getFullYear()} Copyright:</Footer>
   </Layout>
     </div>
   )
