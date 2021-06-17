@@ -50,12 +50,6 @@ const Login = (props) => {
 
           
           </div>  
-          <div style={{height: 120}}/>
-          <Grid container >
-          <Grid item>
-          <Typography color="primary">Designer:<Link href="https://github.com/Diana-nyamai"> DIANA NYAMAI</Link></Typography>
-          </Grid>
-          </Grid>
           </Grid>
             </Grid>
           
