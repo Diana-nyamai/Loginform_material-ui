@@ -5,7 +5,7 @@ import SideNavBar from './SideNavBar'
 const HomePage = ({handleLogOut}) => {
     return (
         <div>
-            <SideNavBar/>
+            <SideNavBar handleLogOut={handleLogOut}/>
             {/*<Button onClick={handleLogOut} variant="contained" color="primary">Log out</Button>*/}
         </div>
     )

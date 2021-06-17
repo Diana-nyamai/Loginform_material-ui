@@ -8,11 +8,11 @@ function SideNavBar({handleLogOut}) {
     <Layout className="layout">
     <Header>
       <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        {new Array(5).fill(null).map((_, index) => {
-          const key = index + 1;
-          return <Menu.Item key={key} onClick={handleLogOut}>{`logout ${key}`}</Menu.Item>;
-        })}
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+      <Menu.Item >Home</Menu.Item>
+
+      <Menu.Item  onClick={handleLogOut}>logout</Menu.Item>
+        
       </Menu>
     </Header>
     <Content style={{ padding: '0 50px' }}>
