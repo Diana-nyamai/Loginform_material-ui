@@ -2,11 +2,11 @@ import { Button } from '@material-ui/core'
 import React from 'react'
 import SideNavBar from './SideNavBar'
 
-const HomePage = ({handleLogOut}) => {
+const HomePage = () => {
     return (
         <div>
             <SideNavBar handleLogOut={handleLogOut}/>
-            {/*<Button onClick={handleLogOut} variant="contained" color="primary">Log out</Button>*/}
+            
         </div>
     )
 }
