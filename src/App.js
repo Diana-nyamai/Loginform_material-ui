@@ -54,7 +54,7 @@ const handleLogIn = () =>{
                     break;
                case "auth/weak-password":
                 setPasswordError(err.message);
-                    break;a
+                    break;
              }
            })
   }
