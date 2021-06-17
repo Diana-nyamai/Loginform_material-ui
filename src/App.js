@@ -53,6 +53,7 @@ const handleLogIn = () =>{
                  setEmailError(err.message);
                     break;
                case "auth/weak-password":
+               case "auth/no-password":
                    setPassword(err.message);
                     break;
              }
