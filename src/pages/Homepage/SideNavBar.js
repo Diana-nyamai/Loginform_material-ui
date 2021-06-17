@@ -11,7 +11,7 @@ function SideNavBar({handleLogOut}) {
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
       <Menu.Item >Home</Menu.Item>
 
-      <Menu.Item  onClick={handleLogOut} style={{align:'right'}}>logout</Menu.Item>
+      <Menu.Item  onClick={handleLogOut} style={{textAlign:'center'}}>logout</Menu.Item>
         
       </Menu>
     </Header>
