@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd';
 
-function SideNavBar() {
+function SideNavBar({handleLogOut}) {
   const { Header, Content, Footer } = Layout;
   return (
     <div>
@@ -9,9 +9,9 @@ function SideNavBar() {
     <Header>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        {new Array(15).fill(null).map((_, index) => {
+        {new Array(5).fill(null).map((_, index) => {
           const key = index + 1;
-          return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
+          return <Menu.Item key={key} onClick={handleLogOut}>{`logout ${key}`}</Menu.Item>;
         })}
       </Menu>
     </Header>
