@@ -5,8 +5,7 @@ const HomePage = ({handleLogOut}) => {
     return (
         <div>
             <SideNavBar handleLogOut={handleLogOut}/>
-            
-        </div>
+    </div>
     )
 }
 
