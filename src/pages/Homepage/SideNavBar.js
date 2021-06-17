@@ -5,7 +5,7 @@ function SideNavBar({handleLogOut}) {
   const { Header, Content, Footer } = Layout;
   return (
     <div>
-    <Layout className="layout">
+    <Layout className="layout" style={{minHeight:'100vh'}}>
     <Header>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
