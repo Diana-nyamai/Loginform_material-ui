@@ -12,6 +12,7 @@ function SideNavBar({handleLogOut}) {
       <Menu.Item >Home</Menu.Item>
       <Menu.Item >About</Menu.Item>
       <Menu.Item >FAQs</Menu.Item>
+      <Menu.Item >gallery</Menu.Item>
 
       <Menu.Item  onClick={handleLogOut} style={{textAlign:'center'}}>logout</Menu.Item>
         
