@@ -5,9 +5,11 @@ import logo from '../assets/Images/logo.png'
 
 const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
-    const {values, setValues} = useState(false);
+    const {values, setValues} = useState({showpassword: false});
 
-    
+    const handleShowPasword = () =>({
+      setValues({...values, })
+    })
     return (
         <div>
            <Grid container style={{minHeight:'100vh'}}>
