@@ -7,7 +7,7 @@ const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
     const {values, setValues} = useState({showpassword: false});
 
-    const handleShowPasword = () =>{
+    const handleShowPassword = () =>{
       setValues({...values, showpassword: !values.showpassword})
     }
     return (
@@ -36,7 +36,7 @@ const Login = (props) => {
           <TextField required label="Password" type="password" value={password} margin="normal" onChange={(e) => setPassword(e.target.value)}
           endAdornment={
               <InputAdornment>
-              <IconButton></IconButton>
+              <IconButton ></IconButton>
               </InputAdornment>
 
           }
