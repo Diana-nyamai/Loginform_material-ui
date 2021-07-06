@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Button, Grid, Link, TextField, Typography} from '@material-ui/core';
 import natur from '../assets/Images/natur.png'
 import logo from '../assets/Images/logo.png'
 
 const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
+    const {values, setValues} = useState(false);
+
+    
     return (
         <div>
            <Grid container style={{minHeight:'100vh'}}>
