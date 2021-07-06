@@ -27,7 +27,7 @@ function SideNavBar({handleLogOut}) {
      
       
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Created by Diana Ndinda Nyamai; &copy; {new Date().getFullYear()} Copyright</Footer>
+    <Footer style={{ textAlign: 'center' }}>Created by Diana Ndinda Nyamai: &copy; {new Date().getFullYear()} Copyright</Footer>
   </Layout>
     </div>
   )
