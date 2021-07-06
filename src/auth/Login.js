@@ -37,7 +37,7 @@ const Login = (props) => {
           <TextField required label="Password" type="password" value={password} margin="normal" onChange={(e) => setPassword(e.target.value)}
           endAdornment={
               <InputAdornment>
-              <IconButton onClick={handleShowPassword}>{values.showpassword? <Visibility/>:<Visibilityoff/>}</IconButton>
+              <IconButton onClick={handleShowPassword}>{}</IconButton>
               </InputAdornment>
 
           }
