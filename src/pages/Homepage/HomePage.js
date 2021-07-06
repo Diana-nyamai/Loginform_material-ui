@@ -1,10 +1,10 @@
 import React from 'react'
-import SideNavBar from './SideNavBar'
+import NavBar from './NavBar'
 
 const HomePage = ({handleLogOut}) => {
     return (
         <div>
-            <SideNavBar handleLogOut={handleLogOut}/>
+            <NavBar handleLogOut={handleLogOut}/>
     </div>
     )
 }
