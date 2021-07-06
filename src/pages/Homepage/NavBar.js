@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd';
+import {Link} from '@material-ui/core';
 
 function NavBar({handleLogOut}) {
   const { Header, Content, Footer } = Layout;
@@ -9,7 +10,7 @@ function NavBar({handleLogOut}) {
     <Header>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" >
-      <Menu.Item >Home</Menu.Item>
+      <Menu.Item ><Link>Home</Link></Menu.Item>
       <Menu.Item >About</Menu.Item>
       <Menu.Item >FAQs</Menu.Item>
       <Menu.Item >Gallery</Menu.Item>
