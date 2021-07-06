@@ -7,9 +7,9 @@ const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
     const {values, setValues} = useState({showpassword: false});
 
-    const handleShowPasword = () =>({
-      setValues({...values, })
-    })
+    const handleShowPasword = () =>{
+      setValues({...values, showpassword: !values.showpassword})
+    }
     return (
         <div>
            <Grid container style={{minHeight:'100vh'}}>
