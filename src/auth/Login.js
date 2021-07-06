@@ -34,7 +34,12 @@ const Login = (props) => {
           <Typography style={{fontSize:11, color:'red',fontStyle:'italic'}}>{emailError}</Typography>
 
           <TextField required label="Password" type="password" value={password} margin="normal" onChange={(e) => setPassword(e.target.value)}
-          
+          endAdornment={
+              <InputAdornment>
+              </InputAdornment>
+
+          }
+
           />
           <Typography style={{fontSize:11, color:'red',fontStyle:'italic'}}>{passwordError}</Typography>
           <Typography align="right"><Link>forgot password?</Link></Typography>
