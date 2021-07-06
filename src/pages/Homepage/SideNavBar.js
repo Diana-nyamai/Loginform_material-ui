@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd';
 
-function SideNavBar({handleLogOut}) {
+function NavBar({handleLogOut}) {
   const { Header, Content, Footer } = Layout;
   return (
     <div>
@@ -33,4 +33,4 @@ function SideNavBar({handleLogOut}) {
   )
 }
 
-export default SideNavBar
+export default NavBar
