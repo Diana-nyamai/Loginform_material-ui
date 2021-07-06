@@ -10,7 +10,7 @@ function NavBar({handleLogOut}) {
     <Header>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" >
-      <Menu.Item ><Link href="https://ant.design/docs/react/introduce">Home</Link></Menu.Item>
+      <Menu.Item ><Link href="#">Home</Link></Menu.Item>
       <Menu.Item >About</Menu.Item>
       <Menu.Item >FAQs</Menu.Item>
       <Menu.Item >Gallery</Menu.Item>
