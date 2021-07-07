@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Button, Grid, Link, TextField, Typography,InputAdornment,IconButton} from '@material-ui/core';
-import {Visibility, Visisbilityoff} from '@material-ui/icons';
+import {Visibility, Visibilityoff} from '@material-ui/icons';
 import natur from '../assets/Images/natur.png'
 import logo from '../assets/Images/logo.png'
 
@@ -38,7 +38,7 @@ const Login = (props) => {
           endAdornment={
 
               <InputAdornment>
-              <IconButton onClick={handleShowPassword}>{}</IconButton>
+              <IconButton onClick={handleShowPassword}>{values.showPassword ? <Visibility /> : <VisibilityOff />}</IconButton>
               </InputAdornment>
 
           }
