@@ -6,7 +6,7 @@ import logo from '../assets/Images/logo.png'
 
 const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
-    const {values, setValues} = useState(showPassword: false);
+    const {values, setValues} = useState({showPassword: false});
 
     const handleShowPassword = () =>{
       setValues({...values, showPassword: !values.showPassword})
