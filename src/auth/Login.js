@@ -9,7 +9,7 @@ const Login = (props) => {
     const {values, setValues} = useState({showPassword: false});
 
     const handleShowPassword = () =>{
-      setValues({...values, showPassword: !values.showPUassword})
+      setValues({...values, showPassword: !values.showPassword})
     }
     return (
         <div>
