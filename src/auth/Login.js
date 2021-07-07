@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Button, Grid, Link, TextField, Typography,InputAdornment,IconButton} from '@material-ui/core';
-import {Visibility, Visibilityoff} from '@material-ui/icons';
+import {Visibility, VisibilityOff} from '@material-ui/icons';
 import natur from '../assets/Images/natur.png'
 import logo from '../assets/Images/logo.png'
 
