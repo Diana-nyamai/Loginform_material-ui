@@ -8,7 +8,9 @@ const Login = (props) => {
     const {email,setEmail,password,setPassword,handleLogIn,handleSignUp,hasAccount,setHasAccount,emailError,passwordError} = props;
     const {values, setValues} = useState({showPassword: false});
 
-    import VisibilityIcon from '@material-ui/icons/Visibility';
+    const handleClickShowPassword = () => {
+      setValues({ ...values, showPassword: !values.showPassword });
+    };
     return (
         <div>
            <Grid container style={{minHeight:'100vh'}}>
