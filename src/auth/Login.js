@@ -32,12 +32,6 @@ const Login = (props) => {
           <Typography style={{fontSize:11, color:'red',fontStyle:'italic'}}>{emailError}</Typography>
 
           <TextField required label="Password" type="password" value={password} margin="normal" onChange={(e) => setPassword(e.target.value)}
-          endAdornment={
-              <InputAdornment>
-              <IconButton onClick={handleClickShowPassword}><VisibilityIcon/></IconButton>
-              </InputAdornment>
-
-          }
 
           />
           <Typography style={{fontSize:11, color:'red',fontStyle:'italic'}}>{passwordError}</Typography>
